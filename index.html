@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Kumpulan Api Web Xenzi Gan'z</title>
+  <style>
+      pre {
+          max-height: 400px;
+          overflow: scroll;
+      }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+      <h2>Kumpulan Api Web Sederhana</h2>
+      <p>API sederhana Bisa Kalian Pakai Setiap buat Script ataupun buat Website</p>
+      
+  		<i class="mb-0">Github : https://github.com/Aldi098</i>
+
+	
+    </div>
+    <div class="container">
+      <h2></h2>
+      <p><b>1. Api Web Bot chat</b></p>
+      <p><b>Metode:</b> <code>GET</code></p>
+      <p><b>Parameters:</b> <code>chat</code></p>
+      <pre>https://xenzi-bot.herokuapp.com/api/bot_chat</pre>
+      <p><b>Contoh Parameters:</b></p>
+      <pre>
+import requests
+api = requests.get(https://xenzi-bot.herokuapp.com/api/bot_chat', params={"chat":"halo"}).text
+print (api)
+      </pre>
+      <p><b>Respon :</b></p>
+      <pre>
+{
+    "result": {
+        "status": "success",
+        "bot": "Halo ganteng"
+    },
+    "developer": "Xenzi Ganz",
+    "Github": "https://github.com/Aldi098",
+    "Youtube": "Xenzi Gan'z"
+}
+      </pre>
+      </ol>
+    </div>
+
+    <div class="container">
+      <h2></h2>
+      <p><b>2. Api Web user-agent random</b></p>
+      <p><b>Metode:</b> <code>GET</code></p>
+      <p><b>Parameters:</b> <code>-</code></p>
+      <pre>https://xenzi-agent.herokuapp.com/api/user-agent</pre>
+      <p><b>Contoh Parameters:</b></p>
+      <pre>
+import requests
+api = requests.get(https://xenzi-agent.herokuapp.com/api/user-agent').text
+print (api)
+      </pre>
+      <p><b>Respon :</b></p>
+      <pre>
+{
+    "result": {
+        "status": "success",
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1623.0 Safari/537.36"
+    },
+    "developer": "Xenzi Ganz",
+    "Github": "https://github.com/Aldi098",
+    "Youtube": "Xenzi Gan'z"
+}
+      </pre>
+      </ol>
+    </div>
+    
+ <div class="container">
+      <h2></h2>
+      <p><b>3. Api Web Spam Call</b></p>
+      <p><b>Metode:</b> <code>GET</code></p>
+      <p><b>Parameters:</b> <code>phone</code></p>
+      <pre>https://xenzi-call.herokuapp.com/api/spamcall</pre>
+      <p><b>Contoh Parameters:</b></p>
+      <pre>
+import requests
+api = requests.get('https://xenzi-call.herokuapp.com/api/spamcall', params={"phone":"81288572373"}).text
+print (api)
+      </pre>
+      <p><b>Respon :</b></p>
+      <pre>
+{
+      "result": {
+          "terkirim": 1,
+          "gagal": 0,
+          "total_spam": 1
+       }, 
+       "developer": "Xenzi Ganz",
+       "Github": "https://github.com/Aldi098",
+       "Youtube": "Xenzi Gan'z"
+ }
+      </pre>
+      </ol>
+    </div>
+    
+  </div>
+</body>
+</html>
